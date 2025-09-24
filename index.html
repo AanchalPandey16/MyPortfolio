@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aanchal Pandey</title>
+    <script>
+      try {
+        const t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#">Portfolio</a>
+        </div>
+<ul class="nav-links">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#education">Education</a></li> <!-- Added -->
+  <li><a href="#certifications">Certifications</a></li> <!-- Added -->
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </div>
+          </label>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>Aanchal Pandey</h1>
+          <h2>Data Analyst | Data Scientist</h2>
+          <div class="hero-btns">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/AanchalPandey16" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/aanchal-pandey-b7ba01256/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:aanchalpandey1610@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="assets/profile.jpg" alt="Aanchal Pandey" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate Data professional with strong skills in Python,
+              SQL, and data visualization tools. I excel at cleaning, analyzing,
+              and extracting actionable insights from complex datasets. My goal
+              is to turn data into impactful business decisions.
+            </p>
+            <p>
+              I hold a Bachelor of Science in Computer Science from Mumbai
+              University with a CGPI of 9.63/10. Currently, I’m expanding my
+              expertise in Machine Learning and Generative AI, while
+              specializing in developing data-driven solutions and creating
+              interactive visualizations to communicate insights effectively.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>
+                  Proficient in Python and SQL for data manipulation and
+                  analysis
+                </p>
+              </div>
+              <div class="highlight">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+                <p>
+                  Strong analytical skills with attention to detail and pattern
+                  recognition
+                </p>
+              </div>
+              <div class="highlight">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Problem Solving</h3>
+                <p>
+                  Capable of translating complex problems into data-driven
+                  solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3><i class="fas fa-code"></i> Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag advanced">Python</span>
+              <span class="skill-tag advanced">SQL</span>
+              <span class="skill-tag intermediate">Django</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+            <div class="skill-tags">
+              <span class="skill-tag advanced">Power BI</span>
+              <span class="skill-tag intermediate">Tableau</span>
+              <span class="skill-tag advanced">Excel</span>
+              <span class="skill-tag intermediate">Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag advanced">SQL</span>
+              <span class="skill-tag intermediate">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+            <div class="skill-tags">
+              <span class="skill-tag intermediate">Linear Regression</span>
+              <span class="skill-tag intermediate">Logistic Regression</span>
+              <span class="skill-tag intermediate">Model Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid main-projects">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+                alt="Loan Prediction Project"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Loan Prediction</h3>
+              <p>
+                Built and deployed a machine learning model to predict loan
+                approval status based on applicant data. Preprocessed data using
+                Pandas, developed a Logistic Regression model, and deployed it
+                using Streamlit.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Streamlit</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/AanchalPandey16/Loan-Prediction-Application/blob/main/Readme.md"
+                  target="_blank"
+                  class="project-btn"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+                alt="Student Performance Prediction"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Student Performance Prediction</h3>
+              <p>
+                Developed a machine learning model to predict student academic
+                performance based on lifestyle and demographic factors. Applied
+                Linear Regression and created an interactive UI for predictions.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Streamlit</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/AanchalPandey16/Student-Performance-Predictor"
+                  target="_blank"
+                  class="project-btn"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/hospitality domain dashboard.png"
+                alt="Hospitality Dashboard"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Hospitality Analytics Dashboard</h3>
+              <p>
+                Designed an interactive Power BI dashboard to analyze
+                hospitality performance and booking trends. Integrated multiple
+                datasets to visualize key metrics such as occupancy and revenue
+                trends.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Data Modeling</span>
+                <span class="tag">Data Visualization</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-btn"
+                  ><i class="fab fa-github"></i> View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ FIXED: Removed nested container. This is the ONLY .additional-projects div -->
+        <div class="projects-grid additional-projects">
+          <!-- Project Cards Go Directly Here -->
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/sales dashboard.png" alt="Sales Dashboard" />
+            </div>
+            <div class="project-info">
+              <h3>Sales Performance Dashboard</h3>
+              <p>Built an interactive Power BI dashboard tracking regional sales, growth trends, and KPIs for executive decision-making.</p>
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">SQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/AanchalPandey16/Sales-Analysis-Dashboard" target="_blank" class="project-btn">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/finance dashboard.png" alt="Finance Analysis Dashboard" />
+            </div>
+            <div class="project-info">
+              <h3>Finance Analysis Dashboard</h3>
+              <p>Developed a finance analysis using power bi</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/AanchalPandey16/Finance-Analysis-Dashboard" target="_blank" class="project-btn">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more project cards as needed -->
+        </div>
+
+        <div class="projects-btn-container">
+          <button id="view-more-btn" class="view-more-btn">
+            <span>View More Projects</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+<section id="education" , class="education-section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <svg class="trend-svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet">
+      <!-- X axis -->
+      <line x1="100" y1="450" x2="900" y2="450" class="axis-line" />
+
+      <!-- Zig-zag trend line -->
+      <polyline points="150,200 500,350 850,80" class="trend-line" />
+
+      <!-- Data points -->
+      <circle cx="150" cy="200" r="10" class="trend-dot" title="10th: 84.8% - M.K.E.S English High School" />
+      <circle cx="500" cy="350" r="10" class="trend-dot" title="12th: 57.33% - Holy Cross Convent High School" />
+      <circle cx="850" cy="80" r="10" class="trend-dot" title="BSc: 9.63/10 - BK Birla College" />
+
+      <!-- Value labels -->
+      <text x="150" y="180" class="value-label" text-anchor="middle">84.8%</text>
+      <text x="500" y="380" class="value-label" text-anchor="middle">57.33%</text>
+      <text x="850" y="40" class="value-label" text-anchor="middle">9.63/10</text>
+
+      <!-- Time & School labels -->
+      <text x="150" y="470" class="time-label" text-anchor="middle">2019–2020</text>
+      <text x="150" y="490" class="time-label" text-anchor="middle">M.K.E.S English High School</text>
+      <text x="500" y="470" class="time-label" text-anchor="middle">2020–2022</text>
+      <text x="500" y="490" class="time-label" text-anchor="middle">Holy Cross Convent High School</text>
+      <text x="850" y="470" class="time-label" text-anchor="middle">2022–2025</text>
+      <text x="850" y="490" class="time-label" text-anchor="middle">BK Birla College</text>
+    </svg>
+  </div>
+</section>
+
+
+
+
+
+    <section id="certifications" ,class="certifications-section">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+          <div class="certification-card">
+            <div class="certification-image">
+              <img
+                src="certificates/DA mettle.png"
+                alt="Data Analytics Certificate"
+                class="certificate-thumbnail"
+              />
+              <div class="view-certificate">
+                <i class="fas fa-eye"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="certification-info">
+              <h3>Data Analytics</h3>
+              <p>
+                Completed hands-on training in data analysis techniques, data
+                visualization, and tools (Excel, Power BI, Python).
+              </p>
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-image">
+              <img
+                src="certificates/ForageDA.png"
+                alt="Data Analytics - Job Simulation Certificate"
+                class="certificate-thumbnail"
+              />
+              <div class="view-certificate">
+                <i class="fas fa-eye"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="certification-info">
+              <h3>Data Analytics - Job Simulation</h3>
+              <p>
+                Participated in a Forage virtual experience program simulating
+                real-world data analysis tasks.
+              </p>
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-image">
+              <img
+                src="certificates/SQL.png"
+                alt="SQL Certificate"
+                class="certificate-thumbnail"
+              />
+              <div class="view-certificate">
+                <i class="fas fa-eye"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="certification-info">
+              <h3>SQL</h3>
+              <p>
+                Proficient in SQL, demonstrated through HackerRank practice and
+                self-study.
+              </p>
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-image">
+              <img
+                src="certificates/Python.png"
+                alt="Python Certificate"
+                class="certificate-thumbnail"
+              />
+              <div class="view-certificate">
+                <i class="fas fa-eye"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="certification-info">
+              <h3>Python</h3>
+              <p>
+                Experienced in Python for data handling, problem-solving, and
+                workflow automation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img id="modal-certificate-image" src="" alt="Certificate" />
+        <h3 id="modal-certificate-title"></h3>
+      </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-intro">
+          Interested in working together? Feel free to reach out!
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>aanchalpandey1610@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <p><a href="https://github.com/AanchalPandey16" target="_blank" rel="noopener noreferrer">github.com/AanchalPandey16</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <p><a href="https://www.linkedin.com/in/aanchal-pandey-b7ba01256/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aanchal-pandey</a></p>
+            </div>
+          </div>
+
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xeorqgyd"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" style="display: none" />
+
+            <button type="submit" class="submit-btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ FIXED JAVASCRIPT -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Theme Toggle
+        const toggle = document.getElementById('checkbox');
+        if (toggle) {
+          const saved = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const initial = saved || (prefersDark ? 'dark' : 'light');
+
+          document.documentElement.setAttribute('data-theme', initial);
+          toggle.checked = initial === 'dark';
+
+          toggle.addEventListener('change', () => {
+            const theme = toggle.checked ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+            try { localStorage.setItem('theme', theme); } catch(e) {}
+          });
+        }
+
+        // View More Projects Button (FIXED)
+        const viewMoreBtn = document.getElementById('view-more-btn');
+        const additionalProjects = document.querySelector('.additional-projects');
+
+        if (viewMoreBtn && additionalProjects) {
+          let isExpanded = false;
+
+          viewMoreBtn.addEventListener('click', () => {
+            isExpanded = !isExpanded;
+            if (isExpanded) {
+              additionalProjects.classList.add('show'); // ✅ Uses CSS class
+              viewMoreBtn.innerHTML = `
+                <span>View Less Projects</span>
+                <i class="fas fa-chevron-up"></i>
+              `;
+              viewMoreBtn.classList.add('active');
+            } else {
+              additionalProjects.classList.remove('show'); // ✅ Uses CSS class
+              viewMoreBtn.innerHTML = `
+                <span>View More Projects</span>
+                <i class="fas fa-chevron-down"></i>
+              `;
+              viewMoreBtn.classList.remove('active');
+            }
+          });
+        }
+
+        // Mobile Burger Menu
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (burger && navLinks) {
+          burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+          });
+
+          document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+              navLinks.classList.remove('nav-active');
+              burger.classList.remove('toggle');
+            });
+          });
+        }
+
+        // Certificate Modal
+        const modal = document.getElementById('certificate-modal');
+        const modalImg = document.getElementById('modal-certificate-image');
+        const modalTitle = document.getElementById('modal-certificate-title');
+        const closeModal = document.querySelector('.close-modal');
+
+        if (modal && closeModal) {
+          document.querySelectorAll('.view-certificate').forEach(btn => {
+            btn.addEventListener('click', function() {
+              const card = this.closest('.certification-card');
+              const imgSrc = card.querySelector('.certificate-thumbnail').src;
+              const title = card.querySelector('.certification-info h3').textContent;
+
+              modalImg.src = imgSrc;
+              modalTitle.textContent = title;
+              modal.style.display = 'flex';
+            });
+          });
+
+          closeModal.onclick = () => modal.style.display = 'none';
+          window.onclick = (event) => {
+            if (event.target === modal) modal.style.display = 'none';
+          };
+        }
+
+        // Formspree Handler
+        const form = document.getElementById('contact-form');
+        const statusDiv = document.getElementById('form-status');
+
+        if (form && statusDiv) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: { Accept: 'application/json' }
+            })
+            .then(response => {
+              if (response.ok) {
+                statusDiv.innerHTML = '<p class="success">✅ Message sent successfully!</p>';
+                form.reset();
+              } else {
+                return response.json().then(data => {
+                  throw new Error(data.error || 'Submission failed');
+                });
+              }
+            })
+            .catch(error => {
+              statusDiv.innerHTML = `<p class="error">❌ ${error.message}</p>`;
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
