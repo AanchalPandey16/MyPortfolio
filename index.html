@@ -275,11 +275,9 @@
             </div>
             <div class="project-info">
               <h3>Sales Performance Dashboard</h3>
-              <p>Built an interactive Power BI dashboard tracking regional sales, growth trends, and KPIs for executive decision-making.</p>
+              <p>Built an interactive Tbaleau dashboard tracking regional sales, growth trends, and KPIs for executive decision-making.</p>
               <div class="project-tags">
-                <span class="tag">Power BI</span>
-                <span class="tag">DAX</span>
-                <span class="tag">SQL</span>
+                <span class="tag">Tableau</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/AanchalPandey16/Sales-Analysis-Dashboard" target="_blank" class="project-btn">
@@ -297,9 +295,9 @@
               <h3>Finance Analysis Dashboard</h3>
               <p>Developed a finance analysis using power bi</p>
               <div class="project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">Pandas</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Excel</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/AanchalPandey16/Finance-Analysis-Dashboard" target="_blank" class="project-btn">
@@ -518,7 +516,6 @@
       </div>
     </section>
 
-    <!-- ✅ FIXED JAVASCRIPT -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         // Theme Toggle
@@ -538,7 +535,7 @@
           });
         }
 
-        // View More Projects Button (FIXED)
+        // View More Projects Button
         const viewMoreBtn = document.getElementById('view-more-btn');
         const additionalProjects = document.querySelector('.additional-projects');
 
@@ -548,14 +545,14 @@
           viewMoreBtn.addEventListener('click', () => {
             isExpanded = !isExpanded;
             if (isExpanded) {
-              additionalProjects.classList.add('show'); // ✅ Uses CSS class
+              additionalProjects.classList.add('show'); // Uses CSS class
               viewMoreBtn.innerHTML = `
                 <span>View Less Projects</span>
                 <i class="fas fa-chevron-up"></i>
               `;
               viewMoreBtn.classList.add('active');
             } else {
-              additionalProjects.classList.remove('show'); // ✅ Uses CSS class
+              additionalProjects.classList.remove('show'); // Uses CSS class
               viewMoreBtn.innerHTML = `
                 <span>View More Projects</span>
                 <i class="fas fa-chevron-down"></i>
@@ -640,4 +637,5 @@
       });
     </script>
   </body>
+
 </html>
